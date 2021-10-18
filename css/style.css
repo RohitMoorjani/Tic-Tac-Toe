@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+        height: 3.5rem;
+        /* background-color: #AF929D; */
+        background-color: #c76288;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+}
+nav ul {
+    list-style-type: none;
+}
+.maincontainer{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 66vh;
+    padding: 5rem;
+}
+.grid{
+    display: grid;
+    grid-template-rows: repeat(3,10rem);
+    grid-template-columns: repeat(3,10rem);
+}
+.box{
+    border: 2px solid black;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    
+}
+.text{
+    font-family: 'Josefin Slab', serif;
+    margin-top: 1rem;
+}
+.box:hover{
+    background-color: #c76288;
+}
+.gameInfo{
+    margin: 2rem 10rem 2rem 0rem;
+    padding: 2rem 2rem 2rem 0rem;
+}
+.img img{
+    width: 0px;
+    transition: width 0.3s ease-in;
+}
+.info{
+    font-weight: bolder;
+}
+#reset{
+    background-color: #c76288;
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+footer{
+    background-color: #c76288;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 3.5rem;
+
+}
+footer h1{
+    font-size: inherit;
+    font-weight: 1;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 880px) {
+   .maincontainer{
+    flex-wrap: wrap;
+    padding: 2.1rem;
+    height: 75vh;
+   }
+   .grid{
+    grid-template-rows: repeat(3,7.5rem);
+    grid-template-columns: repeat(3,7.5rem);
+   }
+   /* .box{
+       font-size: 5rem;
+   } */
+   .gameInfo{
+    margin: -4rem 0rem -10rem 0rem;
+    /* padding: 0rem 2.4rem 0rem 2.9rem;
+    width: 32rem; */
+    }
+    .gameInfo h1{
+        font-size: 1.3rem;
+    }
+    footer{
+        height: 5rem;
+    }
+    footer h1{
+        padding: 2rem;
+    }
+  }
+/* @media only screen and (max-width: 550px) {
+    .maincontainer{
+     flex-wrap: wrap;
+    }
+   } */
