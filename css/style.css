@@ -94,7 +94,7 @@ footer h1{
    .maincontainer{
     flex-wrap: wrap;
     padding: 2.1rem;
-    height: 75vh;
+    height: 95vh;
    }
    .grid{
     grid-template-rows: repeat(3,7.5rem);
