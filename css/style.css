@@ -40,7 +40,7 @@ nav ul {
 }
 .text{
     font-family: 'Josefin Slab', serif;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
 .box:hover{
     background-color: #c76288;
@@ -94,7 +94,7 @@ footer h1{
    .maincontainer{
     flex-wrap: wrap;
     padding: 2.1rem;
-    height: 95vh;
+    height: 97vh;
    }
    .grid{
     grid-template-rows: repeat(3,7.5rem);
@@ -116,6 +116,9 @@ footer h1{
     }
     footer h1{
         padding: 2rem;
+    }
+    .text{
+        margin: 0;
     }
   }
 /* @media only screen and (max-width: 550px) {
