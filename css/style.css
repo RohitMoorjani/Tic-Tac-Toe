@@ -100,13 +100,8 @@ footer h1{
     grid-template-rows: repeat(3,7.5rem);
     grid-template-columns: repeat(3,7.5rem);
    }
-   /* .box{
-       font-size: 5rem;
-   } */
    .gameInfo{
     margin: -4rem 0rem -10rem 0rem;
-    /* padding: 0rem 2.4rem 0rem 2.9rem;
-    width: 32rem; */
     }
     .gameInfo h1{
         font-size: 1.3rem;
@@ -121,8 +116,3 @@ footer h1{
         margin-top: 1rem;
     }
   }
-/* @media only screen and (max-width: 550px) {
-    .maincontainer{
-     flex-wrap: wrap;
-    }
-   } */

@@ -1,4 +1,3 @@
-console.log("Welcome to Tic Tac Toe")
 let click = new Audio("media/click.mp3");
 let win = new Audio("media/win.mp3");
 let turn = "X";
@@ -39,23 +38,32 @@ const checkWin = () => {
 
 //Game Logic
 let boxes = document.getElementsByClassName("box");
-Array.from(boxes).forEach((element) => {        //forEach function will call the arrow function once for each ele in the array
+let counter=0;
+Array.from(boxes).forEach((element) => {    
+   //forEach function will call the arrow function once for each ele in the array derived from boxes class
     let boxtext = element.querySelector(".text"); //boxtext now has the span element of class text
     element.addEventListener('click', () => {
-        if (boxtext.innerHTML === "" ) {             //if the grid box is empty
+        if (boxtext.innerHTML === "" ) {     
+            counter++;        //counter is counted everytime its clicked
             boxtext.innerHTML =turn;
             turn = changeTurn();                 
             click.play();
             checkWin();                         
-            if (!flag)
+            if (!flag && counter!==9)
                 document.getElementsByClassName("info")[0].innerHTML = "Turn for " + turn;      
         }
-        else{
-            boxtext.innerHTML = "";
-        }
+            // isTie();
+            if(isTie())
+                document.getElementsByClassName("info")[0].innerHTML="Its a tie";
     })
 })
 
+function isTie(){
+    if(counter===9 && !flag)
+        return true
+    else
+        return false
+}
 //Reset button logic
 reset.addEventListener("click", ()=>{
     let boxtexts= document.querySelectorAll(".text");
