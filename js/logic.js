@@ -53,8 +53,10 @@ Array.from(boxes).forEach((element) => {
                 document.getElementsByClassName("info")[0].innerHTML = "Turn for " + turn;      
         }
             // isTie();
-            if(isTie())
+            if(isTie()){
+                win.play();
                 document.getElementsByClassName("info")[0].innerHTML="Its a tie";
+                document.querySelector(".img").getElementsByTagName("img")[0].style.width="15rem";}
     })
 })
 
